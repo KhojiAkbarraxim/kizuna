@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KizunaGroup | 絆グループ | お問い合わせ</title>
+    <meta name="description" content="日本・ウズベキスタンのビジネスに関するご相談をお待ちしております。" />
+    <link rel="icon" type="image/png" href="assets/images/kizuna_cropped.png" />
+    <script src="assets/js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css?v=20260409b" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="flex-1 pt-16 lg:pt-20">
+      <section class="py-16 lg:py-24" style="background-color: #f7f5f3;">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center" data-reveal>
+          <div class="w-px h-12 bg-primary mx-auto mb-6"></div>
+          <h1 class="font-heading text-4xl md:text-5xl font-bold tracking-tight">お問い合わせ</h1>
+          <p class="mt-4 text-muted-foreground text-lg max-w-lg mx-auto">
+            日本・ウズベキスタンのビジネスに関するご相談をお待ちしております。
+          </p>
+        </div>
+      </section>
+
+      <section class="py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-16">
+            <div class="lg:col-span-3" data-reveal>
+              <div id="contact-form-wrap">
+                <form id="contact-form" class="space-y-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                      <label for="name" class="text-sm font-medium">お名前 <span class="text-primary">*</span></label>
+                      <input id="name" name="name" class="input-field" placeholder="お名前（フルネーム）" required />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="company" class="text-sm font-medium">会社名・組織名</label>
+                      <input id="company" name="company" class="input-field" placeholder="会社名または組織名" />
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="email" class="text-sm font-medium">メールアドレス <span class="text-primary">*</span></label>
+                    <input id="email" name="email" type="email" class="input-field" placeholder="your@email.com" required />
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="message" class="text-sm font-medium">メッセージ <span class="text-primary">*</span></label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      class="textarea-field resize-none"
+                      placeholder="プロジェクトやご相談内容をお聞かせください..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button id="contact-submit" type="submit" class="contact-submit-btn btn btn-lg btn-primary w-full md:w-auto">
+                    <span class="contact-submit-content">
+                      <svg class="contact-submit-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21.2 3.8 10.3 14.6"></path>
+                        <path d="m21.2 3.8-6.1 16.4-4.1-7.2L3.8 8.9Z"></path>
+                      </svg>
+                      <span>送信する</span>
+                    </span>
+                  </button>
+                </form>
+              </div>
+
+              <div id="contact-success" class="hidden text-center py-16">
+                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 text-primary text-2xl">✓</div>
+                <h3 class="font-heading text-2xl font-semibold mb-3">送信完了</h3>
+                <p class="text-muted-foreground">お問い合わせいただきありがとうございます。近日中にご連絡いたします。</p>
+                <button id="contact-reset" type="button" class="btn btn-outline mt-6">別のメッセージを送る</button>
+              </div>
+            </div>
+
+            <div class="lg:col-span-2 contact-sidebar space-y-8" data-reveal data-delay="140">
+              <div>
+                <h3 class="contact-panel-title font-heading font-semibold mb-6 tracking-tight">直接連絡</h3>
+                <div class="space-y-5">
+                  <a href="mailto:rakhimovanvarbek@gmail.com" class="contact-direct-item group">
+                    <span class="contact-direct-icon" aria-hidden="true">
+                      <svg class="contact-direct-icon-glyph" viewBox="0 0 24 24">
+                        <rect x="3.4" y="6.5" width="17.2" height="11" rx="1.9"></rect>
+                        <path d="m4.5 7.9 7.5 5.2 7.5-5.2"></path>
+                      </svg>
+                    </span>
+                    <span class="contact-direct-copy">
+                      <span class="contact-direct-label">メール</span>
+                      <span class="contact-direct-value group-hover:text-primary transition-colors">rakhimovanvarbek@gmail.com</span>
+                    </span>
+                  </a>
+                  <a href="tel:+817017100770" class="contact-direct-item group">
+                    <span class="contact-direct-icon" aria-hidden="true">
+                      <svg class="contact-direct-icon-glyph" viewBox="0 0 24 24">
+                        <path d="M21 16.2v2.7a1.9 1.9 0 0 1-2.1 1.9 18.9 18.9 0 0 1-8.3-3 18.6 18.6 0 0 1-5.8-5.8 18.8 18.8 0 0 1-3-8.3A1.9 1.9 0 0 1 3.7 1.6h2.7a1.9 1.9 0 0 1 1.9 1.6c.1 1 .3 2 .6 2.9a1.9 1.9 0 0 1-.4 2l-1.2 1.2a15 15 0 0 0 7.6 7.6l1.2-1.2a1.9 1.9 0 0 1 2-.4c1 .3 1.9.5 2.9.6a1.9 1.9 0 0 1 1.6 1.9z"></path>
+                      </svg>
+                    </span>
+                    <span class="contact-direct-copy">
+                      <span class="contact-direct-label">電話</span>
+                      <span class="contact-direct-value group-hover:text-primary transition-colors">+8170-1710-0770</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-message-panel">
+                <h3 class="contact-panel-title font-heading font-semibold mb-6 tracking-tight">メッセージ</h3>
+
+                <div class="contact-messenger-actions flex gap-3">
+                  <a
+                    href="https://wa.me/817017100770"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-messenger-btn contact-messenger-btn-wa"
+                  >
+                    <svg class="contact-messenger-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3.5c-4.7 0-8.5 3.3-8.5 7.3 0 2.2 1.2 4.2 3 5.6L5.8 20l3.3-1.7c.9.2 1.9.3 2.9.3 4.7 0 8.5-3.3 8.5-7.3s-3.8-7.8-8.5-7.8Z"></path>
+                    </svg>
+                    <span>WhatsApp</span>
+                  </a>
+                  <a
+                    href="https://t.me/+817017100770"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-messenger-btn contact-messenger-btn-telegram"
+                  >
+                    <svg class="contact-messenger-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M21 4 11 13"></path>
+                      <path d="m21 4-6 16-4-7-7-4Z"></path>
+                    </svg>
+                    <span>Telegram</span>
+                  </a>
+                </div>
+
+                <div class="contact-note p-6 rounded-lg border border-border/50">
+                  <p class="text-sm leading-relaxed">
+                    通常24時間以内にご返信いたします。お急ぎの場合は、WhatsAppまたはTelegramよりご連絡ください。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="floating-actions"></div>
+
+    <script src="assets/js/site.js?v=20260407c"></script>
+  </body>
+</html>
